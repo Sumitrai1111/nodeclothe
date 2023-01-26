@@ -5,7 +5,7 @@ dotenv.config()
 let port = process.env.PORT || 9900;
 let mongo = require('mongodb');
 let MongoClient = mongo.MongoClient;
-let mongoUrl = process.env.MongoURL;
+let mongoUrl = "mongodb://localhost:27017";
 let cors = require('cors')
 let bodyParser = require('body-parser');
 let db;
